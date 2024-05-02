@@ -86,7 +86,7 @@ The dataset used in this project has the following structure:
 
 Each row in the dataset represents a patient, and each column is a different feature related to the patient's health metrics or demographic information.
 
-# Click Here, https://suga9.github.io/Diabetes-Predection/Diabetes.ipynb%20-%20Colab.pdf to view the entire file.
+### Click Here, to view the entire file.
 
-
+https://suga9.github.io/Diabetes-Predection/Diabetes.ipynb%20-%20Colab.pdf 
 
