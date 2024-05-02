@@ -90,3 +90,26 @@ Each row in the dataset represents a patient, and each column is a different fea
 
 https://suga9.github.io/Diabetes-Predection/Diabetes.ipynb%20-%20Colab.pdf 
 
+
+## Model explanation using SHAP
+explainer = shap.TreeExplainer(XGBClassifier_model_fitted)
+shap_values = explainer.shap_values(test_set)
+
+shap.summary_plot(shap_values, test_set)
+
+ ![image](https://github.com/suga9/Diabetes-Predection/assets/72648506/d0734abd-a128-4cd6-ad44-61733ca1371c)
+
+
+explainer = shap.TreeExplainer(XGBClassifier_model_fitted,train_set,feature_perturbation='interventional')
+
+shap_values_interv = explainer.shap_values(test_set)
+
+Display the explanations
+shap.summary_plot(shap_values_interv, test_set)
+
+![image](https://github.com/suga9/Diabetes-Predection/assets/72648506/28d09d27-7c62-4de7-b742-36f53ec40909)
+
+ 
+
+
+
